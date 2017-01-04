@@ -1,0 +1,238 @@
+*{
+  font-family: "Times New Roman", Times, serif;
+  font-weight:bold;
+}
+.container{
+  margin:0;
+  padding:0 25px;
+  width:100%;
+}
+p{
+  margin:0;
+}
+ul{
+ padding:0;
+}
+/***********************************************************************************************************************
+*****************************************************页头部分***********************************************************
+************************************************************************************************************************/
+header {
+  padding: 15px 0;
+  border-bottom: 1px solid #28a3ef;
+  div:nth-child(1) {
+    float: left;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 22px;
+      height: 19px;
+      background: url(../images/project.png) no-repeat 0, 0;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 2em;
+      margin-left: 10px;
+    }
+  }
+  div:nth-child(2) {
+    float: right;
+    a {
+      text-decoration: none;
+      i {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+        background: url("../images/answer.png") no-repeat 0 0;
+      }
+      span {
+
+      }
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    div.btn-group button {
+      border: none;
+      span:nth-child(1){
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        vertical-align: middle;
+        background: url("../images/user-1.png") no-repeat 0,0;
+      }
+    }
+    div.btn-group button:hover {
+      background: rgb(249, 249, 249);
+    }
+  }
+}
+.clearfix:before,.clearfix:after{
+  content:"";
+  display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+  *zoom:1;/*IE/7/6*/
+}
+/***********************************************************************************************************************
+*****************************************************导航部分***********************************************************
+************************************************************************************************************************/
+nav div{
+  margin:10px 0;
+}
+nav ul.nav-tabs{
+
+  li a:hover{
+    background:transparent;
+    //border:transparent;
+  }
+}
+/*****************************************************供应商信息********************************************************
+************************************************************************************************************************/
+section{
+  display:none;
+}
+section.active{
+  display:block;
+}
+section div:nth-child(1){
+  border-bottom:1px solid gray;
+  line-height:30px;
+  span{
+    font-size:1.2em;
+  }
+}
+#info ul{
+  &>li{
+    margin-top:10px;
+    display:inline-block;
+    width: 23%;
+    p{
+      width: 30%;
+      display: inline-block;
+      text-align:right;
+      span{
+      }
+      }
+    div {
+      text-align: right;
+      width: 68%;
+      line-height: 30px;
+      button.btn {
+        position: relative;
+        width: 100%;
+        line-height: 10px;
+        text-align: left;
+        span.caret {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+        }
+      }
+      ul.dropdown-menu {
+        li {
+          display: block;
+          width:100%;
+        }
+      }
+    }
+  }
+  li:nth-child(8){
+    width:30%;
+    p{
+      text-align:right;
+      width:23%;
+    }
+    div{
+      width:21%;
+    }
+    div:nth-child(2){
+      width:25%;
+    }
+  }
+}
+#info div:nth-child(3){
+    border-bottom:1px solid gray;
+    line-height:30px;
+    position:relative;
+    margin-bottom:5px;
+    button{
+      position: absolute;
+      right: 0px;
+      bottom: 3px;
+      line-height: 13px;
+      background:#0d6e9e;
+      color:white;
+      font-size:0.9em;
+    }
+}
+#info table{
+  text-align:center;
+  thead{
+    tr{
+      td{
+        padding:5px 0;
+        background:#0d6e9e;
+        color:white;
+      }
+    }
+  }
+  tbody{
+    tr{
+      td:last-child{
+
+      }
+    }
+  }
+}
+/*****************************************************手动添加**********************************************************
+************************************************************************************************************************/
+#handAdd ul{
+  &>li{
+    margin-top:10px;
+    display:inline-block;
+    width:80%;
+    p{
+      width: 30%;
+      display: inline-block;
+      text-align:right;
+      span{
+      }
+    }
+    div {
+      text-align: right;
+      width:20%;
+      line-height: 30px;
+      button.btn {
+        position: relative;
+        width: 100%;
+        line-height: 10px;
+        text-align: left;
+        span.caret {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+        }
+      }
+      ul.dropdown-menu {
+        li {
+          display: block;
+          width:100%;
+        }
+      }
+    }
+    input{
+      width:20%;
+      display:inline-block;
+      line-height: 20px;
+    }
+  }
+  &>li:nth-child(4){
+    position:relative;
+    input{
+      background:url(../images/date.png)no-repeat center right;
+    }
+  }
+}
